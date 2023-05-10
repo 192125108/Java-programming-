@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class handl{
+    public static void main(String[] args) {
+        int hi=0,lo=0;
+        int[] apple={34,87,23,44,92,82,75,93};
+        int temp=apple.length;
+        for(int i=0;i<temp;i++)
+        {
+            for(int j=0;i<temp;i++)
+                {
+                    if (apple[i]>apple[j])
+                        hi=apple[i];
+                    if (apple[i]<apple[j])
+                        lo=apple[i];
+                }
+        }
+        System.out.println("the highest value is"+hi);
+        System.out.println("the lowest value is"+lo);
+    }
+}
